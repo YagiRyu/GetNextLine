@@ -6,7 +6,7 @@
 /*   By: r-yagi <r-yagi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 11:49:54 by r-yagi            #+#    #+#             */
-/*   Updated: 2022/05/21 21:15:41 by r-yagi           ###   ########.fr       */
+/*   Updated: 2022/05/22 20:52:30 by r-yagi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,13 @@
 # include <unistd.h>
 # include <fcntl.h>
 # include <stdio.h>
+# include <errno.h>
 
-# define BUFFER_SIZE 256
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 100
+# endif
 
 char	*get_next_line(int fd);
+void	*ft_calloc(size_t count, size_t size);
 
 #endif
