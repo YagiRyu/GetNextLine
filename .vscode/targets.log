@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Sun May 22 22:05:09 2022
+# Make data base, printed on Tue May 24 20:56:17 2022
 
 # Variables
 
@@ -27,27 +27,27 @@ VSCODE_LOG_NATIVE = false
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/r-yagi/42Tokyo/GetNextLine
+CURDIR := /Users/r-yagi/42Tokyo/get-next-line
 # makefile
 SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"ja","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
-# makefile (from `Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+# makefile
+MAKEFILE_LIST := 
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-INFOPATH = /opt/homebrew/share/info:
+INFOPATH = /opt/homebrew/share/info:/opt/homebrew/share/info:
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/87/kglktqs12j7gg729l3t1vjw90y9yfb/T/vscode-ipc-f59f853c-8b43-4a1e-856d-e89fed4d652a.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/87/kglktqs12j7gg729l3t1vjw90y9yfb/T/vscode-ipc-f7d3f96a-3957-45a7-bc24-353e6ebb2c32.sock
 # environment
 VSCODE_CWD = /
 # environment
-PATH = /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/r-yagi/development/flutter/bin:/Users/r-yagi/Library/Python/3.8/bin
+PATH = /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/r-yagi/development/flutter/bin:/Users/r-yagi/Library/Python/3.8/bin:/Users/r-yagi/development/flutter/bin:/Users/r-yagi/Library/Python/3.8/bin
 # environment
 LaunchInstanceID = 14A466DC-68C1-496C-A1BD-4EA3D4EFD433
 # environment
@@ -63,13 +63,13 @@ SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.QrnEo62ar7/Listeners
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /Users/r-yagi/42Tokyo/GetNextLine
+PWD = /Users/r-yagi/42Tokyo/get-next-line
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-MANPATH = /opt/homebrew/share/man::
+MANPATH = /opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -88,22 +88,30 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
-# default
-MAKECMDGOALS := all
 # environment
-SHLVL = 1
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 2
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = r-yagi
 # makefile
 .DEFAULT_GOAL := 
+# default
+MAKECMDGOALS := all
+# environment
+TERM_SESSION_ID = w0t1p0:0D8A330B-EB3A-4968-9B39-581A3E1C67DD
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -119,7 +127,11 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
+TERM_PROGRAM_VERSION = 3.4.15
+# environment
 XPC_SERVICE_NAME = application.com.microsoft.VSCode.19122719.19122725
+# environment
+LC_TERMINAL_VERSION = 3.4.15
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -127,7 +139,11 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
+ITERM_SESSION_ID = w0t1p0:0D8A330B-EB3A-4968-9B39-581A3E1C67DD
+# environment
 HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+COLORFGBG = 7;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x41E4F9CB:0x1:0xE
 # environment
@@ -136,6 +152,8 @@ COMMAND_MODE = unix2003
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
 # environment
 LC_ALL = C
 # environment
@@ -153,9 +171,11 @@ CLICOLOR = 1
 # environment
 LANG = C
 # environment
-VSCODE_PID = 6320
+TERM = xterm-256color
+# environment
+VSCODE_PID = 27054
 # variable set hash-table stats:
-# Load=70/1024=7%, Rehash=0, Collisions=1/93=1%
+# Load=80/1024=8%, Rehash=0, Collisions=4/101=4%
 
 # Pattern-specific Variable Values
 
@@ -190,11 +210,21 @@ all:
 
 # Not a target:
 Makefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
 #  Implicit rule search has been done.
- 
-#  Last modified 2022-05-11 23:24:37
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+makefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -204,19 +234,29 @@ Makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+GNUmakefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 # files hash-table stats:
-# Load=4/1024=0%, Rehash=0, Collisions=0/16=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
 
 # No general (`VPATH' variable) search path.
 
-# # of strings in strcache: 1
-# # of strcache buffers: 1
-# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
-# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+# # of strings in strcache: 0
+# # of strcache buffers: 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sun May 22 22:05:09 2022
+# Finished Make data base on Tue May 24 20:56:17 2022
 
  
