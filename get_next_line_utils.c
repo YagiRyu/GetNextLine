@@ -6,13 +6,13 @@
 /*   By: r-yagi <r-yagi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 11:49:48 by r-yagi            #+#    #+#             */
-/*   Updated: 2022/05/24 21:20:09 by r-yagi           ###   ########.fr       */
+/*   Updated: 2022/05/30 23:22:17 by r-yagi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-static size_t	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
