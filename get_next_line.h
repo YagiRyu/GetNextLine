@@ -6,7 +6,7 @@
 /*   By: r-yagi <r-yagi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 11:49:54 by r-yagi            #+#    #+#             */
-/*   Updated: 2022/05/30 23:23:38 by r-yagi           ###   ########.fr       */
+/*   Updated: 2022/06/07 17:01:25 by r-yagi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # include <errno.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 100
+#  define BUFFER_SIZE 1000
 # endif
 
 char	*get_next_line(int fd);
